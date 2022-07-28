@@ -1,0 +1,239 @@
+body{
+    background-color:  pale blue;
+	font-family:Arial, Helvetica, sans-serif;
+    color:#444;
+}
+img{max-width:100%;}
+a{ text-decoration: none !important;}
+h1, h2, h3, h4, h5, h6{
+    color:#888;
+}
+li{list-style:none;}
+ul{padding:0;}
+/*********************** outer dive for container **********************/
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/*********************** name box **********************/
+div#intro {
+    background: #f4f6f9;
+    border-radius: 10px;
+    padding: 20px;
+}
+#intro h1 {
+    margin: 0;
+}
+
+
+/*********************** social-icons **********************/
+#intro ul.icons {
+    list-style: none;
+    padding: 0;
+}
+#intro ul.icons li{display:inline-block;margin-right: 5px;}
+#intro ul.icons li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+#intro ul.icons li a img {
+    border: 1px solid #000;
+    padding: 6px;
+    border-radius: 4px;
+    width: 15px;
+}
+#intro ul.icons li a span.label {
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px 5px;
+}
+
+
+/*********************** featured post **********************/
+
+article.post.featured {
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+article.post.featured img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.post-text {
+    padding: 20px;
+}
+.post-text h2 {
+    margin: 0px;
+}
+a.button, input[type="submit"] {
+    background: #000;
+    color: #fff;
+    border:1px solid #000;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+	transition:all 0.3s ease;
+}
+a.button:hover, input[type="submit"]:hover {
+    background: #fff;
+    color: #000;
+}
+
+/*********************** other posts **********************/
+section.posts {
+    padding-top: 15px;
+    margin: 0 -6px;
+}
+
+.posts article {
+    width: calc(50% - 17px);
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    vertical-align: top;
+    border-radius: 8px;
+    margin: 7px;
+	overflow:hidden;
+}
+
+.posts article img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+.post-text h2 {
+    margin: 0px 0px 10px 0px;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.posts .post-text p {
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 3;
+    /* -webkit-box-orient: vertical; */
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+}
+.post-text a.button {
+    color: #fff;
+}
+.post-text a.button:hover {
+    color: #000;
+}
+
+/*********************** pagination **********************/
+.pagination {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/*********************** footer form **********************/
+footer#footer {
+    padding-top: 30px;
+}
+
+footer section {
+    width: 50%;
+    display: inline-block;
+    float: left;
+	box-sizing: border-box;
+}
+footer section .fields input, footer section textarea#message {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+	box-sizing: border-box;
+}
+footer section label {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+footer section .fields input {
+    margin-bottom: 10px;
+}
+footer section .fields {
+    padding-right: 15px;
+}
+.post-text a {
+    color: #888;
+}
+.post-text a:hover {
+    color: #000;
+}
+/*********************** footer right **********************/
+section.split.contact section {
+    min-height: 115px;
+}
+section.split.contact {
+    background: #f4f6f9;
+    border-radius: 10px;
+    padding: 20px;
+}
+section.split.contact h3 {
+    margin: 0;
+}
+.social-links li {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+/*********************** copyright section **********************/
+div#copyright {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 1px solid #aaa;
+    padding: 10px 0;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.icon-img{
+    width:30px !important;
+    border:none !important;
+}
